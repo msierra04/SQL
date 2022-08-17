@@ -1,0 +1,28 @@
+Create a kitchen cookware/supplies database
+
+CREATE TABLE kitchen_cookware (id INTEGER PRIMARY KEY, name TEXT, size INTEGER, unit TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO kitchen_cookware VALUES (1, "Paring Knife", 3.5, "in", 6, 8);
+INSERT INTO kitchen_cookware VALUES (2, "Utility Knife", 5, "in", 10, 10);
+INSERT INTO kitchen_cookware VALUES (3, "Chef Knife", 6, "in", 15, 12);
+INSERT INTO kitchen_cookware VALUES (4, "Santoku Knife", 7, "in", 18, 10);
+INSERT INTO kitchen_cookware VALUES (5, "Chef Knife", 8, "in", 20, 8);
+INSERT INTO kitchen_cookware VALUES (6, "Stainless Steel Pan", 8, "in", 25, 5);
+INSERT INTO kitchen_cookware VALUES (7, "Stainless Steel Pan", 10, "in", 30, 7);
+INSERT INTO kitchen_cookware VALUES (8, "Stainless Steel Pan", 12, "in", 35, 11);
+INSERT INTO kitchen_cookware VALUES (9, "Stainless Sauce Pan with Lid", 1, "qt", 22, 5);
+INSERT INTO kitchen_cookware VALUES (10, "Stainless Sauce Pan with Lid", 2, "qt", 25, 7);
+INSERT INTO kitchen_cookware VALUES (11, "Stainless Sauce Pan with Lid", 3, "qt", 27, 9);
+INSERT INTO kitchen_cookware VALUES (12, "Stainless Sauce Pan with Lid", 4, "qt", 30, 5);
+INSERT INTO kitchen_cookware VALUES (13, "Stainless Sauce Pan with Lid", 6, "qt", 35, 3);
+INSERT INTO kitchen_cookware VALUES (14, "Stainless Stockpot with Lid", 6, "qt", 40, 6);
+INSERT INTO kitchen_cookware VALUES (15, "Stainless Stockpot with Lid", 8, "qt", 45, 3);
+
+- Display the database
+SELECT * FROM kitchen_cookware;
+
+- Display the database in order by price
+SELECT * FROM kitchen_cookware ORDER BY price;
+
+- Display the average price from all the items on database
+SELECT AVG (price) FROM kitchen_cookware;
